@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <title>CHINESE ZODIAC</title>
+    <script>
+
+    function getYear()
+    {
+       var x = document.getElementById('box').value;
+        x = parseInt(x);
+
+    if(x % 12 == 0)
+    {
+      var monkey = "<img src = 'monkey.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  monkey;
+    }
+
+    else if (x % 12 == 1)
+
+    {
+      var rooster = "<img src = 'rooster.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  rooster;
+    }
+
+    else if (x % 12 == 2)
+
+    {
+      var dog = "<img src = 'dog.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  dog;
+    }
+
+    else if (x % 12 == 3)
+
+    {
+      var pig = "<img src = 'pig.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  pig;
+    }
+
+    else if (x % 12 == 4)
+
+    {
+      var rat = "<img src = 'rat.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  rat;
+    }
+
+    else if (x % 12 == 5)
+
+    {
+      var ox = "<img src = 'ox.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  ox;
+    }
+
+    else if (x % 12 == 6)
+
+    {
+      var tiger = "<img src = 'tiger.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  tiger;
+    }
+
+    else if (x % 12 == 7)
+
+    {
+      var rabbit = "<img src = 'rabbit.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  rabbit;
+    }
+
+    else if (x % 12 == 8)
+
+    {
+      var dragon = "<img src = 'dragon.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  dragon;
+    }
+
+    else if (x % 12 == 9)
+
+    {
+      var snake = "<img src = 'snake.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  snake;
+    }
+
+    else if (x % 12 == 10)
+
+    {
+      var horse = "<img src = 'horse.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  horse;
+    }
+
+    else if (x % 12 == 11)
+
+    {
+      var goat = "<img src = 'goat.jpg' height = '500px' width = '500px'>";
+      document.getElementById("sign").innerHTML =  goat;
+    }
+}
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#sack").click(function(){
+    $("#drag").animate({left: '550px'});
+  });
+});
+</script>
+
+  <style>
+  #drag{
+    position: absolute;
+    width: 350px;
+    height: 250px;
+  }
+  </style>
+  </head>
+  <body background="chin.jpg">
+        <input id = "box" type = "text">
+        <input type = "button" value = "Get Zodiac Sign" onclick = "getYear()">
+        <input type = "button" value = "Make Dragon Fly" id = "sack">
+        <br>
+        <br>
+        <br>
+        <span id = "sign"></span>
+        <img id = "drag" src = "dragin.jpg">
+  </body>
+</html>
